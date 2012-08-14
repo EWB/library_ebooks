@@ -98,6 +98,7 @@ function library_ebooks_strongarm() {
   $strongarm->name = 'node_options_library_ebook_collection';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_library_ebook_collection'] = $strongarm;
 
