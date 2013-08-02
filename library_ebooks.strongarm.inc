@@ -89,6 +89,15 @@ function library_ebooks_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'colorbox' => array(
+        'custom_settings' => FALSE,
+      ),
+      'announcements' => array(
+        'custom_settings' => FALSE,
+      ),
+      'database_link' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -96,10 +105,13 @@ function library_ebooks_strongarm() {
           'weight' => '0',
         ),
         'metatags' => array(
-          'weight' => '40',
+          'weight' => '7',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '6',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '5',
         ),
       ),
       'display' => array(),

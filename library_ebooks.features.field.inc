@@ -57,7 +57,7 @@ function library_ebooks_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '1',
         ),
         'search_index' => array(
           'label' => 'hidden',
@@ -147,14 +147,14 @@ function library_ebooks_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 7,
+          'weight' => '7',
         ),
         'full' => array(
           'label' => 'inline',
           'module' => 'select_or_other',
           'settings' => array(),
           'type' => 'select_or_other_formatter',
-          'weight' => '5',
+          'weight' => '6',
         ),
         'search_result' => array(
           'label' => 'above',
@@ -189,7 +189,7 @@ function library_ebooks_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => '44',
+        'weight' => '10',
       ),
     ),
   );
@@ -241,7 +241,7 @@ function library_ebooks_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '3',
+          'weight' => '4',
         ),
         'search_index' => array(
           'label' => 'above',
@@ -275,7 +275,7 @@ function library_ebooks_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '5',
+        'weight' => '4',
       ),
     ),
   );
@@ -318,14 +318,14 @@ function library_ebooks_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 9,
+          'weight' => '9',
         ),
         'full' => array(
           'label' => 'inline',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '7',
+          'weight' => '8',
         ),
         'search_result' => array(
           'label' => 'above',
@@ -355,7 +355,108 @@ function library_ebooks_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '46',
+        'weight' => '12',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-library_ebook_collection-field_ebook_images'.
+  $fields['node-library_ebook_collection-field_ebook_images'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_ebook_images',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'library_ebook_collection',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '320',
+          ),
+          'type' => 'image',
+          'weight' => '1',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'module' => 'galleryformatter',
+          'settings' => array(
+            'link_to_full' => 1,
+            'link_to_full_style' => 'jumbo',
+            'linking_method' => 'show_full_link',
+            'modal' => 'colorbox',
+            'slide_style' => 'micro-slide',
+            'style' => 'nostyle',
+            'thumb_style' => 'micro-thumb',
+          ),
+          'type' => 'galleryformatter_default',
+          'weight' => '0',
+        ),
+        'search_result' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ebook_images',
+      'label' => 'Images',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 1,
+        'default_image' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '4 MB',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 1,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'multiupload_imagefield_widget',
+        'settings' => array(
+          'preview_image_style' => '',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_miw',
+        'weight' => '13',
       ),
     ),
   );
@@ -408,7 +509,7 @@ function library_ebooks_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '4',
+          'weight' => '5',
         ),
         'search_index' => array(
           'label' => 'above',
@@ -502,14 +603,14 @@ function library_ebooks_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 8,
+          'weight' => '8',
         ),
         'full' => array(
-          'label' => 'inline',
+          'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'search_result' => array(
           'label' => 'above',
@@ -539,7 +640,7 @@ function library_ebooks_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '45',
+        'weight' => '11',
       ),
     ),
   );
@@ -584,13 +685,13 @@ function library_ebooks_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 6,
+          'weight' => '6',
         ),
         'full' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '8',
+          'weight' => '9',
         ),
         'search_result' => array(
           'label' => 'above',
@@ -620,7 +721,7 @@ function library_ebooks_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '43',
+        'weight' => '9',
       ),
     ),
   );
@@ -671,7 +772,7 @@ function library_ebooks_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'search_index' => array(
           'label' => 'above',
@@ -706,7 +807,7 @@ function library_ebooks_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '4',
+        'weight' => '3',
       ),
     ),
   );
@@ -766,7 +867,7 @@ function library_ebooks_field_default_fields() {
             'taxonomy_term_separator' => ', ',
           ),
           'type' => 'ds_taxonomy_separator',
-          'weight' => '6',
+          'weight' => '7',
         ),
         'search_index' => array(
           'label' => 'above',
@@ -800,7 +901,7 @@ function library_ebooks_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '42',
+        'weight' => '8',
       ),
     ),
   );
@@ -811,6 +912,7 @@ function library_ebooks_field_default_fields() {
   t('Description');
   t('Formats');
   t('Help');
+  t('Images');
   t('Link');
   t('Printing and Download Notes');
   t('Provider');
